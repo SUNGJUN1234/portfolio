@@ -10,3 +10,7 @@ jobs:
         env: 
           COMMIT_ID: ${{ github.sha }}
         run: echo "Commit id => $COMMIT_ID"
+      - name: Pring Password
+        env:
+          MY_PASSWORD: ${{ secrets.PASSWORD }}
+        runt: echo MY password is $MY_PASSWORD
